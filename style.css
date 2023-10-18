@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Roboto', cursive;
     display: flex;
@@ -11,7 +10,7 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
-    background-color: #000000;
+    background-color: #000;
 }
 
 .bg {
@@ -24,8 +23,12 @@ body {
     height: 100%;
     z-index: -1;
     filter: blur(10px);
-    background-size: contain; /* Adjust to 'contain' to fully display the entire image */
+    background-size: contain;
     background-position: center;
-    background-origin: content-box; /* Ensures the image is scaled within the content box, not padding/margin */
+    background-origin: content-box;
 }
 
+.loading-text {
+    font-size: 8vw; /* Increase the font size for the loading text */
+    color: white;
+}
